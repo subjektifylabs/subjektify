@@ -1,0 +1,22 @@
+{
+    "name": "monorepo",
+    "version": "0.0.0",
+    "private": true,
+    "author": "Subjektify Labs",
+    "license": "SEE LICENSE IN EACH PACKAGE",
+    "scripts": {
+        "clean": "pnpm -r clean",
+        "build": "pnpm -r build",
+        "prettier": "prettier . --write",
+        "prettier:check": "prettier . --check",
+        "release": "pnpm release:patch",
+        "release:minor": "node scripts/release/minor.js",
+        "release:patch": "node scripts/release/patch.js"
+    },
+    "devDependencies": {
+        "chalk": "4.1.2",
+        "prettier": "^3.3.2",
+        "rimraf": "^5.0.7",
+        "typescript": "^5.5.2"
+    }
+}
